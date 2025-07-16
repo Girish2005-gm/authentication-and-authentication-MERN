@@ -7,7 +7,7 @@ const connection = require("../models/db");
 dotenv.config({ path: ".env" });
 
 
-// ✅ Signup Controller
+// Signup Controller
 const signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -47,7 +47,7 @@ const signup = async (req, res) => {
   }
 };
 
-// ✅ Signin Controller
+// Signin Controller
 const signin = async (req, res) => {
   try {
     const { email, password } = req.body;
